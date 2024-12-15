@@ -94,22 +94,22 @@ gcc ./cascade.c -o cascade.exe
 ./cascade.exe 16k_scp.txt s-16k.wav
 
 gcc spectrogram.c -o spectrogram.exe -lm
-./spectrogram.exe 32 rectangular 32 10 s-16k.wav s-16k.Set1.txt
-./spectrogram.exe 32 hamming     32 10 s-16k.wav s-16k.Set2.txt
-./spectrogram.exe 30 rectangular 32 10 s-16k.wav s-16k.Set3.txt
-./spectrogram.exe 30 hamming     32 10 s-16k.wav s-16k.Set4.txt
-./spectrogram.exe 32 rectangular 32 10 s-8k.wav s-8k.Set1.txt
-./spectrogram.exe 32 hamming     32 10 s-8k.wav s-8k.Set2.txt
-./spectrogram.exe 30 rectangular 32 10 s-8k.wav s-8k.Set3.txt
-./spectrogram.exe 30 hamming     32 10 s-8k.wav s-8k.Set4.txt
-./spectrogram.exe 32 rectangular 32 10 aeueo-16kHz.wav aeueo-16kHz.Set1.txt
-./spectrogram.exe 32 hamming     32 10 aeueo-16kHz.wav aeueo-16kHz.Set2.txt
-./spectrogram.exe 30 rectangular 32 10 aeueo-16kHz.wav aeueo-16kHz.Set3.txt
-./spectrogram.exe 30 hamming     32 10 aeueo-16kHz.wav aeueo-16kHz.Set4.txt
-./spectrogram.exe 32 rectangular 32 10 aeueo-8kHz.wav aeueo-8kHz.Set1.txt
-./spectrogram.exe 32 hamming     32 10 aeueo-8kHz.wav aeueo-8kHz.Set2.txt
-./spectrogram.exe 30 rectangular 32 10 aeueo-8kHz.wav aeueo-8kHz.Set3.txt
-./spectrogram.exe 30 hamming     32 10 aeueo-8kHz.wav aeueo-8kHz.Set4.txt
+./spectrogram.exe 512 rectangular 512 160 s-16k.wav s-16k.Set1.txt
+./spectrogram.exe 512 hamming     512 160 s-16k.wav s-16k.Set2.txt
+./spectrogram.exe 480 rectangular 512 160 s-16k.wav s-16k.Set3.txt
+./spectrogram.exe 480 hamming     512 160 s-16k.wav s-16k.Set4.txt
+./spectrogram.exe 256 rectangular 256  80 s-8k.wav s-8k.Set1.txt
+./spectrogram.exe 256 hamming     256  80 s-8k.wav s-8k.Set2.txt
+./spectrogram.exe 240 rectangular 256  80 s-8k.wav s-8k.Set3.txt
+./spectrogram.exe 240 hamming     256  80 s-8k.wav s-8k.Set4.txt
+./spectrogram.exe 512 rectangular 512 160 aeueo-16kHz.wav aeueo-16kHz.Set1.txt
+./spectrogram.exe 512 hamming     512 160 aeueo-16kHz.wav aeueo-16kHz.Set2.txt
+./spectrogram.exe 480 rectangular 512 160 aeueo-16kHz.wav aeueo-16kHz.Set3.txt
+./spectrogram.exe 480 hamming     512 160 aeueo-16kHz.wav aeueo-16kHz.Set4.txt
+./spectrogram.exe 256 rectangular 256  80 aeueo-8kHz.wav aeueo-8kHz.Set1.txt
+./spectrogram.exe 256 hamming     256  80 aeueo-8kHz.wav aeueo-8kHz.Set2.txt
+./spectrogram.exe 240 rectangular 256  80 aeueo-8kHz.wav aeueo-8kHz.Set3.txt
+./spectrogram.exe 240 hamming     256  80 aeueo-8kHz.wav aeueo-8kHz.Set4.txt
 
 python3 spectshow.py s-16k.wav s-16k.Set1.txt s-16k.Set1.pdf
 python3 spectshow.py s-16k.wav s-16k.Set1.txt s-16k.Set2.pdf
